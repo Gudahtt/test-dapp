@@ -6,7 +6,7 @@ set -o pipefail
 readonly __SCRIPT_NAME__="${0##*/}"
 readonly __SEE_HELP_MESSAGE__="See '${__SCRIPT_NAME__} --help' for more information."
 
-GH_REMOTE='origin'
+GH_REMOTE='fork'
 SOURCE_BRANCH='master'
 DEPLOY_BRANCH='gh-pages'
 WEBSITE_DIR_PATH='website'
