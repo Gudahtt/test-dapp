@@ -26,8 +26,10 @@ main {
 
 header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 150px 0;
 }
 
 section {
