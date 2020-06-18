@@ -29,7 +29,6 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 150px 0;
 }
 
 section {
@@ -48,4 +47,9 @@ section {
 
 #connectLogo {
   margin-right: 8px;
+}
+
+#dappLogo {
+  height: 600px;
+  width: 600px;
 }
