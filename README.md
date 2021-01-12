@@ -4,7 +4,7 @@ This is a simple test dapp for use in MetaMask e2e tests and manual QA.
 
 Currently hosted [here](https://metamask.github.io/test-dapp/).
 
-## Usage
+## Usage 
 
 If you wish to use this dapp in your e2e tests, install this package and set up a script of e.g. the following form:
 
