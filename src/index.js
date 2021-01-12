@@ -82,15 +82,15 @@ const signTypedDataV4Verify = document.getElementById('signTypedDataV4Verify')
 const signTypedDataV4VerifyResult = document.getElementById('signTypedDataV4VerifyResult')
 
 const initialize = async () => {
-  // const metamaskStream = new LocalMessageDuplexStream({
-  //   name: 'inpage',
-  //   target: 'contentscript',
-  // })
+  const metamaskStream = new LocalMessageDuplexStream({
+    name: 'inpage',
+    target: 'contentscript',
+  })
 
-  // // this will initialize the provider and set it as window.ethereum
-  // initProvider({
-  //   connectionStream: metamaskStream,
-  // })
+  // this will initialize the provider and set it as window.ethereum
+  initProvider({
+    connectionStream: metamaskStream,
+  })
 
   try {
     // We must specify the network as 'any' for ethers to allow network changes
