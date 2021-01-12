@@ -1,0 +1,8 @@
+{
+  "root": "dist/",
+  "headers": {
+    "/": {
+      "Content-Security-Policy": "default-src 'none'; script-src 'self'; style-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com; img-src 'self'; font-src https://fonts.gstatic.com;"
+    }
+  }
+}

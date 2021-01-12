@@ -6,7 +6,6 @@
     "node": ">= 10"
   },
   "scripts": {
-    "deploy": "./deploy.sh",
     "lint": "eslint . --ext js,json && prettier ./src -c",
     "lint:fix": "eslint . --fix --ext js,json && prettier ./src -c --write",
     "start": "webpack-dev-server",
