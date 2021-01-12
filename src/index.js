@@ -3,6 +3,9 @@ import MetaMaskOnboarding from '@metamask/onboarding'
 import { encrypt, recoverPersonalSignature, recoverTypedSignatureLegacy, recoverTypedSignature, recoverTypedSignature_v4 } from 'eth-sig-util'
 import { ethers } from 'ethers'
 import { toChecksumAddress } from 'ethereumjs-util'
+import { initProvider } from '@metamask/inpage-provider'
+import LocalMessageDuplexStream from 'post-message-stream'
+
 import { hstBytecode, hstAbi, piggybankBytecode, piggybankAbi } from './constants.json'
 
 let ethersProvider
@@ -79,6 +82,16 @@ const signTypedDataV4Verify = document.getElementById('signTypedDataV4Verify')
 const signTypedDataV4VerifyResult = document.getElementById('signTypedDataV4VerifyResult')
 
 const initialize = async () => {
+  // const metamaskStream = new LocalMessageDuplexStream({
+  //   name: 'inpage',
+  //   target: 'contentscript',
+  // })
+
+  // // this will initialize the provider and set it as window.ethereum
+  // initProvider({
+  //   connectionStream: metamaskStream,
+  // })
+
   try {
     // We must specify the network as 'any' for ethers to allow network changes
     ethersProvider = new ethers.providers.Web3Provider(window.ethereum, 'any')
